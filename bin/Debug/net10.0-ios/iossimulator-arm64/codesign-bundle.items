@@ -4,7 +4,7 @@
     <_CodesignBundle Include="NavigationTracker.app">
       <EnableCodeSigning>true</EnableCodeSigning>
       <CodesignSigningKey>-</CodesignSigningKey>
-      <CodesignEntitlements>/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/NavigationTracker/NavigationTracker/obj/Debug/net10.0-ios/iossimulator-arm64/Entitlements.xcent</CodesignEntitlements>
+      <CodesignEntitlements>/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/FinalApp/MSCS533NavigationTracker/obj/Debug/net10.0-ios/iossimulator-arm64/Entitlements.xcent</CodesignEntitlements>
       <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
       <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
       <CodesignExtraArgs></CodesignExtraArgs>
@@ -12,7 +12,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/NavigationTracker/NavigationTracker</SourceProjectPath>
+      <SourceProjectPath>/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/FinalApp/MSCS533NavigationTracker</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

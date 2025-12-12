@@ -22995,11 +22995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/NavigationTracker/NavigationTracker/NavigationTracker.csproj",
+      "projectUniqueName": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/FinalApp/MSCS533NavigationTracker/NavigationTracker.csproj",
       "projectName": "NavigationTracker",
-      "projectPath": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/NavigationTracker/NavigationTracker/NavigationTracker.csproj",
+      "projectPath": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/FinalApp/MSCS533NavigationTracker/NavigationTracker.csproj",
       "packagesPath": "/Users/vikramlamsal/.nuget/packages/",
-      "outputPath": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/NavigationTracker/NavigationTracker/obj/",
+      "outputPath": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/FinalApp/MSCS533NavigationTracker/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [

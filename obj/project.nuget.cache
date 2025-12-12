@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RMlf9x6gciU=",
+  "dgSpecHash": "GlUXPSj4fNE=",
   "success": true,
-  "projectFilePath": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/NavigationTracker/NavigationTracker/NavigationTracker.csproj",
+  "projectFilePath": "/Users/vikramlamsal/Documents/UCumberlands Courses/CS-Fall 2025/MSCS-533-Software Engineering and Multiplatform App Development/FinalApp/MSCS533NavigationTracker/NavigationTracker.csproj",
   "expectedPackageFiles": [
     "/Users/vikramlamsal/.nuget/packages/googlegson/2.13.1.1/googlegson.2.13.1.1.nupkg.sha512",
     "/Users/vikramlamsal/.nuget/packages/microsoft.extensions.configuration/10.0.0/microsoft.extensions.configuration.10.0.0.nupkg.sha512",

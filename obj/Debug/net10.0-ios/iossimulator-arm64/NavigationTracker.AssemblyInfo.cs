@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NavigationTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6d56d0e3b19535e1763f01179ceed14713391ded")]
 [assembly: System.Reflection.AssemblyProductAttribute("NavigationTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NavigationTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
