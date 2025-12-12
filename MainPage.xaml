@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:viewModels="clr-namespace:NavigationTracker.ViewModels"
+             x:Class="NavigationTracker.MainPage"
+             x:DataType="viewModels:MainViewModel"
+             Title="Location Tracker"
+             BackgroundColor="#F4F1FA">
+
+    <Grid RowDefinitions="Auto,*">
+        <Grid BackgroundColor="#5C2AE6"
+              Padding="24,20,24,8">
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Text="Location Tracker"
+                       FontAttributes="Bold"
+                       FontSize="26"
+                       TextColor="White" />
+                <Label Text="{Binding TrackPoints.Count, StringFormat='{0} points'}"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       TextColor="#E0E0E0" />
+            </Grid>
+        </Grid>
+
+        <Grid Row="1">
+            <maps:Map x:Name="TrackingMap"
+                      MapType="Street"
+                      IsShowingUser="True"
+                      AutomationId="HeatMap" />
+
+            <Frame BackgroundColor="#7A49F0"
+                   HasShadow="True"
+                   Opacity="0.95"
+                   Padding="14"
+                   CornerRadius="18"
+                   Margin="20,12,20,0"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Start"
+                   SemanticProperties.Description="Tracking status card">
+                <Grid ColumnDefinitions="*,Auto"
+                      ColumnSpacing="12">
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="{Binding StatusMessage}"
+                               TextColor="White"
+                               FontAttributes="Bold" />
+                        <Label Text="{Binding TrackPoints.Count, StringFormat='Samples recorded: {0}'}"
+                               TextColor="#E5E0FF"
+                               FontSize="12" />
+                    </VerticalStackLayout>
+                    <ActivityIndicator IsRunning="{Binding IsTracking}"
+                                       IsVisible="{Binding IsTracking}"
+                                       Color="White"
+                                       HorizontalOptions="End" />
+                </Grid>
+            </Frame>
+
+            <Frame Padding="0"
+                   CornerRadius="22"
+                   HasShadow="True"
+                   BackgroundColor="Transparent"
+                   Margin="20,0,20,16"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="End">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Padding="16,10"
+                          BackgroundColor="#FFFFFFDD"
+                          ColumnDefinitions="*,Auto">
+                        <Label Text="Tracking Controls"
+                               FontAttributes="Bold"
+                               TextColor="#5C2AE6" />
+                        <Label Text="{Binding ControlPanelToggleText}"
+                               FontSize="12"
+                               TextColor="#5C2AE6"
+                               HorizontalOptions="End" />
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleControlPanelCommand}" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+
+                    <Frame Grid.Row="1"
+                           Padding="16,18"
+                           CornerRadius="22"
+                           HasShadow="False"
+                           BackgroundColor="#FFFFFFF2"
+                           IsVisible="{Binding IsControlPanelExpanded}">
+                        <VerticalStackLayout Spacing="12">
+                            <Label Text="{Binding TrackPoints.Count, StringFormat='Loaded {0} location points'}"
+                                   HorizontalOptions="Center"
+                                   TextColor="#6A6A6A"
+                                   FontAttributes="Bold" />
+
+                            <Grid ColumnDefinitions="*,*"
+                                  ColumnSpacing="12">
+                                <Button Text="Start Tracking"
+                                        Command="{Binding ToggleTrackingCommand}"
+                                        CornerRadius="14"
+                                        Padding="18,12"
+                                        FontAttributes="Bold"
+                                        BackgroundColor="#5C2AE6"
+                                        TextColor="White">
+                                    <Button.Triggers>
+                                        <DataTrigger TargetType="Button"
+                                                     Binding="{Binding IsTracking}"
+                                                     Value="True">
+                                            <Setter Property="Text" Value="Stop Tracking" />
+                                            <Setter Property="BackgroundColor" Value="#E53935" />
+                                        </DataTrigger>
+                                    </Button.Triggers>
+                                </Button>
+
+                                <Button Grid.Column="1"
+                                        Text="Clear Data"
+                                        Command="{Binding ClearHistoryCommand}"
+                                        CornerRadius="14"
+                                        Padding="18,12"
+                                        FontAttributes="Bold"
+                                        BackgroundColor="#FF7069"
+                                        TextColor="White" />
+                            </Grid>
+
+                            <Grid ColumnDefinitions="*,Auto"
+                                  ColumnSpacing="12">
+                                <Button Text="Refresh Heat Map"
+                                        Command="{Binding RefreshHeatMapCommand}"
+                                        CornerRadius="14"
+                                        Padding="18,12"
+                                        FontAttributes="Bold"
+                                        BackgroundColor="#00B9AE"
+                                        TextColor="White" />
+
+                                <Button Grid.Column="1"
+                                        Text="Center On Path"
+                                        Clicked="OnCenterRequested"
+                                        CornerRadius="14"
+                                        Padding="18,12"
+                                        FontAttributes="Bold"
+                                        BackgroundColor="Transparent"
+                                        TextColor="#5C2AE6"
+                                        BorderColor="#5C2AE6" />
+                            </Grid>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>
