@@ -102,7 +102,6 @@ dotnet build -t:Run NavigationTracker/NavigationTracker.csproj \
 | --- | --- |
 | ![Map with heat map](doc/screenshot-tracking.png) | ![Collapsed control panel](doc/screenshot-collapsed.png) |
 
-(Add screenshots under a `docs/` folder if desired.)
 
 ## License
 
