@@ -100,7 +100,7 @@ dotnet build -t:Run NavigationTracker/NavigationTracker.csproj \
 
 | Running state | Collapsed controls |
 | --- | --- |
-| ![Map with heat map](docs/screenshot-tracking.png) | ![Collapsed control panel](docs/screenshot-collapsed.png) |
+| ![Map with heat map](doc/screenshot-tracking.png) | ![Collapsed control panel](doc/screenshot-collapsed.png) |
 
 (Add screenshots under a `docs/` folder if desired.)
 
